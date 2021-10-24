@@ -1,0 +1,21 @@
+body {
+    padding: 70px 30px;
+    margin: 0px auto;
+    z-index: 0;
+}
+.navbar-light {
+    background-color: #e9f5a6;
+    color: black;
+}
+.footer {
+    background-color: #88878b;
+    color: white;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+@media (min-width:575px) {
+    #Navbar {
+        position: absolute;
+        right: 10%;
+    }
+}
