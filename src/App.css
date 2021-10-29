@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Profile Section */
+
+/* Sidebar Section */
+
+.sidemenu{
+  background-color:#F13AB1;
+  color:#fff;
+}
+.dashboardNavbar-list{
+  color:black !important;
+  cursor: pointer;
+}
+.dashboardNavbar{
+  margin-left:18%;
+}
+.dashboardcontent{
+ padding-left: 20%;
+}
+.dashboardSideBar{
+  height:850px;
+  width:230px;
+  border:0;
+  border-right:1px solid lightgray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dashboardlist-content > span {
+  position: relative;
+  top:5px;
+  left:10%;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left:25px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list-group-item :hover{
+ border-left: 3px solid rgb(216, 216, 252) !important;
+}
+.list-group-item-action :hover{
+  border:none !important;
+  padding-left: 5px;
+}
+
+
+/* Profile Image */
+
+.profile-img{
+ position: relative;
+ left:35%;
+ margin:2rem;
+ border: black solid 2px;
+ border-radius: 50%;
+ padding:2px;
+ padding-bottom: 0px;
+}
+
+/* Profile form */
+.form-section{
+  position: relative;
+  left:2.5%;
+}
+.address-section{
+  width:88%;
+}
+
+/* My Videos */
+
+.pagination {
+  margin: 15px auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  outline: none;
 }
-
-.App-link {
-  color: #61dafb;
+.pagination > li > a{
+  border:  2px solid rgba(96, 132, 38, 0.9);
+  border-radius: 50%;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: rgb(101, 238, 101) ;
+  border-color: 2px solid rgba(96, 132, 38, 0.9) ;
+  outline: none ;
 }
