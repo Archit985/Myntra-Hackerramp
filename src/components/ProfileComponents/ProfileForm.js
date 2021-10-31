@@ -26,7 +26,10 @@ const ProfileForm = () => {
           <input type="text" className="form-control w-75" />
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-secondary form-button" data-bs-dismiss="modal">Close</button>
+        <button type="submit" className="btn btn-primary form-button" data-bs-dismiss="modal" >Save changes</button>
+      </div>
     </form>
   )
 }

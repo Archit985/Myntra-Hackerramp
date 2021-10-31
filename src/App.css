@@ -6,10 +6,55 @@
 /* Profile Section */
 
 /* Sidebar Section */
-
+.sidebarColumn{
+  position: relative;
+  left:10%;
+}
+.sidebarRightColumn{
+  position: relative;
+  left:8%;
+}
+@media only screen and (max-width: 1204px) {
+ .sidebarRightColumn{
+  position: relative;
+  left:15%;
+}
+}
+@media only screen and (max-width:900px){
+.sidebarRightColumn{
+  position: relative;
+  left:10%;
+}
+}
+@media only screen and (max-width:600px){
+.sidebarRightColumn{
+  position: relative;
+  left:0%;
+}
+}
 .sidemenu{
-  background-color:#F13AB1;
-  color:#fff;
+  background-color:white;
+  color:black;
+}
+.user{
+  width: 75%;
+  height:85%;
+  position: relative;
+  left:50%;
+}
+.comparison{
+  width:85%;
+  height: 100%;
+}
+.sideitems{
+  position: relative;
+  top:5%;
+  font-size: 16px!important;
+  font-weight: 600;
+}
+.comparisonSection{
+  position: relative;
+  top:5px
 }
 .dashboardNavbar-list{
   color:black !important;
@@ -37,21 +82,26 @@
   padding-left:25px !important;
 }
 
-.list-group-item :hover{
+.list-group-item:hover{
  border-left: 3px solid rgb(216, 216, 252) !important;
 }
 .list-group-item-action :hover{
   border:none !important;
   padding-left: 5px;
 }
-
+@media only screen  and (max-width:900px){
+  .sidebarColumn{
+    display: none;
+  }
+}
 
 /* Profile Image */
 
 .profile-img{
- position: relative;
- left:35%;
- margin:2rem;
+ margin:2rem auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
  border: black solid 2px;
  border-radius: 50%;
  padding:2px;
@@ -60,22 +110,50 @@
 
 /* Profile form */
 .form-section{
-  position: relative;
-  left:2.5%;
+  padding:1rem;
 }
 .address-section{
   width:88%;
 }
+.modal-footer{
+  border-top:0 none
+}
 
 /* My Videos */
+.card{
+  height:75% !important;
+}
+.card-parent{
+  width:40% !important;
+}
+@media screen and (max-width:799px){
+ .card-parent{
+   width:50% !important;
+ }
+ .card{
+height:80% !important;
+ }
+}
 
+.card-title{
+  font-size: 95%;
+}
+.card-text{
+  font-size: 75%;
+}
+@media only screen and (max-width:600px){
+.card{
+  height:90% !important;
+}
+}
 .pagination {
-  margin: 15px auto;
-  display: flex;
-  justify-content: center;
+  position: relative;
+  top:5%;
+  left: 22%;
   list-style: none;
   outline: none;
 }
+
 .pagination > li > a{
   border:  2px solid rgba(96, 132, 38, 0.9);
   border-radius: 50%;
@@ -87,4 +165,165 @@
   background-color: rgb(101, 238, 101) ;
   border-color: 2px solid rgba(96, 132, 38, 0.9) ;
   outline: none ;
+}
+@media only screen and (max-width:600px){
+ .pagination{
+   position: relative;
+   left:1.2%;
+   font-size: 10px !important
+ }
+}
+
+/* Navbar */
+.navbar{
+  height:10vh;
+  background : url('./components/NavbarBg.svg') no-repeat center center;
+  background-size: cover;
+}
+.navbar-toggler{
+  position: relative;
+  left:5%;
+}
+.nav-link{
+  color:black;
+}
+.nav-link:hover{
+  color: black !important;
+  text-decoration: underline;
+}
+.navbar-brand{
+   position:relative;
+   top:5px;
+   left:10%;
+   font-size: 24px;
+}
+.navbar-nav{
+  position: relative;
+  top:5px;
+  left:28%;
+}
+.navbar-nav p{
+  font-size: 24px;
+  cursor: pointer;
+}
+.navbar-nav .btn{
+  position: relative;
+  top:4px;
+  font-size: 20px;
+}
+.btn-success{
+  border-radius:24px;
+}
+
+/* Profile */
+
+.editProfile{
+  position: relative;
+  top:30%;
+  left:5%;
+}
+.uploadVideo{
+  position: relative;
+  top:30%;
+  right:35%;
+}
+.followers{
+  position: relative;
+  top:45%;
+  left:7%;
+  font-size: 1.2rem;
+  color:gray;
+}
+.videoPost{
+  position: relative;
+  top:45%;
+  right:35%;
+ font-size: 1.2rem;
+  color:gray; 
+}
+@media only screen  and (max-width:1204px){
+  .editProfile{
+    position: relative;
+    left:65%;
+  }
+  .uploadVideo{
+    position: relative;
+    right: 0%;
+    left:35%;
+  }
+  .videoPost{
+    position: relative;
+    right:0%;
+    left:35%
+  }
+  .followers{
+    position: relative;
+    left:65%;
+  }
+}
+@media only screen  and (max-width:900px){
+  .editProfile{
+    position: relative;
+    left:135%;
+  }
+  .uploadVideo{
+    position: relative;
+    right: 0%;
+    left:125%;
+  }
+  .videoPost{
+    position: relative;
+    right:0%;
+    left:125%
+  }
+  .followers{
+    position: relative;
+    left:135%;
+  }
+}
+@media only screen  and (max-width:600px){
+  .editProfile{
+    position: relative;
+    left:0%;
+    width:100%;
+  }
+  .uploadVideo{
+    position: relative;
+    right: 0%;
+    left:0%;
+    width:100%
+  }
+  .videoPost{
+    position: relative;
+    right:0%;
+    left:35%;
+    margin-bottom: 25%;
+  }
+  .followers{
+    position: relative;
+    left:35%;
+    margin-bottom:15%;
+  }
+}
+.recentPosts{
+  font-size: 18px;
+  padding: 2px;
+  font-weight: 600;
+  position: relative;
+  top:25%;
+  left:1%
+}
+.hrSeparation{
+  width:100%;
+  position: relative;
+  left:-1.6%
+}
+@media only screen and (max-width:900px){
+  .hrSeparation{
+    left:-25%;
+    width:1000px;
+  }
+  .recentPosts{
+    left:3%;
+  }
 }

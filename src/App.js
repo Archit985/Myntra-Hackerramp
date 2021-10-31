@@ -6,6 +6,8 @@ import Sidebar from './components/Sidebar';
 import Profile from './components/Profile';
 import MyVideos from './components/MyVideosSection/MyVideos';
 import { useState } from 'react';
+//import { Navbar } from 'reactstrap';
+import Navbar from "./components/Navbar"
 
 function App() {
   const [profile, setProfile] = useState(true);
@@ -22,10 +24,13 @@ function App() {
     <BrowserRouter>
       <div className="conatiner" style={{ overflowY: "hidden", overflowX: "hidden" }}>
         <div className="row">
-          <div className="col-md-2 ">
+          <Navbar />
+        </div>
+        <div className="row">
+          <div className="col-md-2 sidebarColumn">
             <Sidebar handleProfile={handleProfile} handleVideos={handleVideos} />
           </div>
-          <div className="col-md-10">
+          <div className="col-md-10  sidebarRightColumn">
             {videos && <MyVideos />}
             {profile && <Profile />}
           </div>

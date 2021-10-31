@@ -11,7 +11,7 @@ class MyVideos extends React.Component {
       offset: 0,
       displayData: [],
       orgtableData: [],
-      perPage: 6,
+      perPage: 14,
       currentPage: 1
     }
     this.handlePageClick = this.handlePageClick.bind(this);
@@ -68,8 +68,8 @@ class MyVideos extends React.Component {
           {this.state.displayData.map((data) => <VideoCard key={data.id} videoData={data} />)}
         </div>
         <ReactPaginate
-          previousLabel={"<< Prev"}
-          nextLabel={"Next >>"}
+          previousLabel={"Prev"}
+          nextLabel={"Next"}
           breakLabel={"..."}
           breakClassName={"break-me"}
           pageCount={this.state.pageCount}

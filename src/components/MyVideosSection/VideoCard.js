@@ -1,7 +1,7 @@
 import SampleImg from "../profile.png"
 const VideoCard = (props) => {
   return (
-    <div className="col-6">
+    <div className="col-6 card-parent">
       <div className="card my-4">
         <div className="row g-0">
           <div className="col-md-4">
