@@ -1,8 +1,8 @@
-import profileImg from "./profile.png"
-import ProfileForm from "./ProfileComponents/ProfileForm";
-import RecentPost from "./ProfileComponents/RecentPost";
+import profileImg from "../profile.png"
+import ProfileForm from "./ProfileForm";
+import RecentPost from "./RecentPost";
 
-const Profile = () => {
+function Profile() {
   return (
     <div className="container">
       <div className="row">
@@ -22,7 +22,7 @@ const Profile = () => {
       <div className="row recent Post">
         <RecentPost />
       </div>
-      <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <ProfileForm />
@@ -30,7 +30,7 @@ const Profile = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Profile;

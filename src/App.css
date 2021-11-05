@@ -6,14 +6,6 @@
 /* Profile Section */
 
 /* Sidebar Section */
-.sidebarColumn{
-  position: relative;
-  left:10%;
-}
-.sidebarRightColumn{
-  position: relative;
-  left:8%;
-}
 @media only screen and (max-width: 1204px) {
  .sidebarRightColumn{
   position: relative;
@@ -68,7 +60,6 @@
 }
 .dashboardSideBar{
   height:850px;
-  width:230px;
   border:0;
   border-right:1px solid lightgray;
 }
@@ -120,9 +111,6 @@
 }
 
 /* My Videos */
-.card{
-  height:75% !important;
-}
 .card-parent{
   width:40% !important;
 }
@@ -194,7 +182,6 @@ height:80% !important;
 .navbar-brand{
    position:relative;
    top:5px;
-   left:10%;
    font-size: 24px;
 }
 .navbar-nav{
@@ -203,13 +190,13 @@ height:80% !important;
   left:28%;
 }
 .navbar-nav p{
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
 }
 .navbar-nav .btn{
   position: relative;
   top:4px;
-  font-size: 20px;
+  font-size: 17px;
 }
 .btn-success{
   border-radius:24px;
@@ -326,4 +313,21 @@ height:80% !important;
   .recentPosts{
     left:3%;
   }
+}
+
+/* Comparison */
+td, th {
+  width: 25%;
+  padding: 5px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+dl .borderRight {
+  border-right: 1px solid black;
+}
+
+.compare {
+  position: fixed;
+  bottom: 0;
 }
