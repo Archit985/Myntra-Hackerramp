@@ -8,6 +8,7 @@ import MyVideos from './components/MyVideosSection/MyVideos';
 import { useState } from 'react';
 //import { Navbar } from 'reactstrap';
 import Navbar from "./components/Navbar"
+import MobileSidebar from "./components/MobileSidebar"
 
 function App() {
   const [profile, setProfile] = useState(true);
@@ -25,6 +26,7 @@ function App() {
       <div className="conatiner" style={{ overflowY: "hidden", overflowX: "hidden" }}>
         <div className="row">
           <Navbar />
+          <MobileSidebar />
         </div>
         <div className="row">
           <div className="col-md-2 sidebarColumn">

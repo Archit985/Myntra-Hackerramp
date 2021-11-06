@@ -21,7 +21,7 @@ const ProfileForm = () => {
           <label>City</label>
           <input type="text" className="form-control w-75" />
         </div>
-        <div class="form-group col-md-6">
+        <div className="form-group col-md-6">
           <label>State</label>
           <input type="text" className="form-control w-75" />
         </div>

@@ -11,7 +11,7 @@ class MyVideos extends React.Component {
       offset: 0,
       displayData: [],
       orgtableData: [],
-      perPage: 14,
+      perPage: 12,
       currentPage: 1
     }
     this.handlePageClick = this.handlePageClick.bind(this);
