@@ -4,9 +4,6 @@ import { useState } from "react";
 
 const UploadForm = () => {
 
-
-  const { google } = require('googleapis')
-
   const [handle, setHandle] = useState("");
   const [tag, setTag] = useState("");
   const [description, setDescription] = useState("");

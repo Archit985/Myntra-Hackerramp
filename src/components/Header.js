@@ -21,7 +21,7 @@ class Header extends Component {
     render() {
         return(
             <React.Fragment>
-                <Navbar expand="md" className="navbar-light">
+                <Navbar expand="md">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <NavbarBrand className="mr-auto pl-3" href="/">
@@ -33,10 +33,7 @@ class Header extends Component {
                                     <NavLink className="nav-link" to="/home">Home</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/contactus">Contact Us</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/home">Login</NavLink>
+                                    <NavLink className="nav-link" to="/login">Login</NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>
