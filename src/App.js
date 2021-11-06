@@ -1,4 +1,13 @@
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import Main from './components/Main';
+import Sidebar from './components/Sidebar';
+import Profile from './components/Profile';
+import MyVideos from './components/MyVideosSection/MyVideos';
+import { useState } from 'react';
+//import { Navbar } from 'reactstrap';
+import Navbar from "./components/Navbar"
+import MobileSidebar from "./components/MobileSidebar"
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Home from './components/Home';
 import Login from './components/Login';
@@ -18,9 +27,9 @@ function App() {
         </Switch>
       </BrowserRouter>
       <footer className="container mt-5 footer">
-          <div className="text-center">
-              Copyright &copy; 2021 IIT BHU Team - Hell Yeah
-          </div>
+        <div className="text-center">
+          Copyright &copy; 2021 IIT BHU Team - Hell Yeah
+        </div>
       </footer>
     </div>
   );
