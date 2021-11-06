@@ -14,6 +14,7 @@ function App() {
             <Route path='/login' component={Login} />
             <Route path='/signup' component={Signup} />
             <Route path='/profile' component={ProfileComp} />
+            <Redirect to="/home" />
         </Switch>
       </BrowserRouter>
       <footer className="container mt-5 footer">

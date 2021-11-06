@@ -62,7 +62,7 @@ class Signup extends Component {
 				            <hr className="m-5" />
 				            <div className="text-center">
 				                Already have an account?<br />
-				                <Link to="/home">Login</Link>
+				                <Link to="/login">Login</Link>
 				            </div>
 				        </div>
 				    </div>

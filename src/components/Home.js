@@ -12,43 +12,29 @@ function Home() {
 				<h3 className="text-center m-2">Exclusive Products</h3> 
 				<div className="row">
 					<div className="card col-md-4 p-3 mb-3">
-					  <img className="card-img-top h-20" src={Clothes} alt="Clothes" />
+					  <img className="card-img-top" src={Clothes} alt="Clothes" style={{height: "70%"}} />
 					  <div className="card-body">
 					    <h5 className="card-title">Trending</h5>
 					    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <div className="row">
-						    <button type="button" className="btn btn-primary col-2">Buy</button>
-						    <button type="button" className="btn btn-link offset-6 col-4">Compare</button>
-					   </div>
+					    <button type="button" className="btn btn-primary">Buy</button>
 					  </div>
 					</div>
 					<div className="card col-md-4 p-3 mb-3">
-					  <img className="card-img-top h-20" src={Sweater} alt="Sweater" />
+					  <img className="card-img-top" src={Sweater} alt="Sweater" style={{height: "70%"}} />
 					  <div className="card-body">
 					    <h5 className="card-title">Sweater</h5>
 					    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <div className="row">
-						    <button type="button" className="btn btn-primary col-2">Buy</button>
-						    <button type="button" className="btn btn-link offset-6 col-4">Compare</button>
-					   </div>
+					    <button type="button" className="btn btn-primary">Buy</button>
 					  </div>
 					</div>
 					<div className="card col-md-4 p-3 mb-3">
-					  <img className="card-img-top h-20" src={Clothes1} alt="Clothes1" />
+					  <img className="card-img-top" src={Clothes1} alt="Clothes1" style={{height: "70%"}} />
 					  <div className="card-body">
 					    <h5 className="card-title">Clothes</h5>
 					    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <div className="row">
-						    <button type="button" className="btn btn-primary col-2">Buy</button>
-						    <button type="button" className="btn btn-link offset-6 col-4">Compare</button>
-					   </div>
+					    <button type="button" className="btn btn-primary">Buy</button>
 					  </div>
 					</div>
-				</div>
-				<div id="compare" className="compare">
-					<form>
-
-					</form>
 				</div>
 			</div>
 		</div>
