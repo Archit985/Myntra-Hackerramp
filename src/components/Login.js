@@ -19,9 +19,9 @@ class Login extends Component {
 				            <h4 className="border-bottom pb-3 pt-3">Login</h4>
 				            <form className="mt-3">
 				                <div className="form-group row">
-				                    <label for="emailid" className="col-md-2 col-form-label">Email</label>
+				                    <label for="username" className="col-md-2 col-form-label">Username</label>
 				                    <div className="col-md-10">
-				                        <input type="email" className="form-control" id="emailid" name="emailid" placeholder="Email" required />
+				                        <input type="text" className="form-control" id="username" name="username" placeholder="Username" required />
 				                    </div>
 				                </div>
 				                <div className="form-group row">

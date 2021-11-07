@@ -3,8 +3,6 @@
   padding: 0;
 }
 
-/* Profile Section */
-
 /* Sidebar Section */
 @media only screen and (max-width: 1204px) {
  .sidebarRightColumn{
@@ -204,15 +202,11 @@ height:80% !important;
 
 /* Profile */
 
-.editProfile{
-  position: relative;
-  top:30%;
-  left:5%;
-}
-.uploadVideo{
-  position: relative;
-  top:30%;
-  right:35%;
+.editProfile, .uploadVideo{
+  background-color: white;
+  color: #424240;
+  border: 2px solid #cfcdca;
+  line-height: 1rem;
 }
 .followers{
   position: relative;

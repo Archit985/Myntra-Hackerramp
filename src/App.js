@@ -1,8 +1,6 @@
 import './App.css';
-import { BrowserRouter } from 'react-router-dom';
 import Main from './components/Main';
 import Sidebar from './components/Sidebar';
-import Profile from './components/Profile';
 import MyVideos from './components/MyVideosSection/MyVideos';
 import { useState } from 'react';
 //import { Navbar } from 'reactstrap';
